@@ -16,3 +16,4 @@ reports/phantomjs/*.json
 *.log
 *.html
 *.xlsx
+package-lock.json
