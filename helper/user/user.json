@@ -1,0 +1,18 @@
+{
+    "validBody": {
+        "username" : "labora",
+        "email": "laborawaty@payfazz.com",
+        "roleId" : [1,8]
+    },
+    "userId" : {
+        "valid": "2",
+        "changeRoleId": "4",
+        "invalid": ""
+    },
+    "updateUserRole" : {
+        "roleId":  [1,2,9,4]
+    },
+    "deleteUser" : {
+        "validId" : 2
+    }
+  }

@@ -1,0 +1,35 @@
+{
+    "getResponseValidSchema": {
+            "type": "object",
+            "required": [ "id", "username", "roleId", "active", "email", "createdAt", "updatedAt", "Client", "role", "permission"],
+            "properties": {
+                "id": "string",
+                "username": "string",
+                "roleId": "array",
+                "active": "boolean",
+                "email": {
+                    "type": [ "string", "null" ]
+                    },
+                "createdAt": "string",
+                "updatedAt": "string",
+                "Client" : {
+                    "type": "object",
+                    "required": ["id", "code", "name", "email", "emailFinance", "active", "createdAt", "updatedAt"],
+                    "properties": {
+                        "id": "integer",
+                        "code": "string",
+                        "name": "string",
+                        "email": "string",
+                        "emailFinance": "string",
+                        "active": "boolean",
+                        "createdAt": "string",
+                        "updatedAt": "string"
+                    },
+                    "additionalProperties": false 
+                },
+                "role": "array",
+                "permission" : "array"
+            },
+            "additionalProperties": false
+    }
+}
